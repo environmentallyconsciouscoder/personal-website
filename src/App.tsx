@@ -1,35 +1,83 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { createRef } from 'react';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const firstDivRef = createRef<HTMLDivElement>();
+  const secondDivRef = createRef<HTMLDivElement>();
+  const thirdDivRef = createRef<HTMLDivElement>();
+
+  function handleScrollToFirstDiv() {
+    firstDivRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+  }
+
+  function handleScrollToSecondDiv() {
+    secondDivRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+  }
+
+  function handleScrollToThirdDiv() {
+    thirdDivRef.current?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'nearest',
+      inline: 'center'
+    });
+  }
 
   return (
     <>
+      <nav>
+        <section onClick={handleScrollToFirstDiv}>First Section</section>
+        <section onClick={handleScrollToSecondDiv}>Second Section</section>
+        <section onClick={handleScrollToThirdDiv}>Third Section</section>
+      </nav>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <div
+          style={{
+            height: '80vh',
+            backgroundColor: '#f0f0f0',
+            marginBottom: '20px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+          ref={firstDivRef}
+        >
+          Content for the first section
+        </div>
+        <div
+          style={{
+            height: '80vh',
+            backgroundColor: '#f0f0f0',
+            marginBottom: '20px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+          ref={secondDivRef}
+        >
+          Content for the second section
+        </div>
+        <div
+          style={{
+            height: '80vh',
+            backgroundColor: '#f0f0f0',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+          ref={thirdDivRef}
+        >
+          Content for the third section
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
