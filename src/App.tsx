@@ -1,81 +1,270 @@
-import React, { createRef } from 'react';
+import {createRef, useState} from 'react';
+import Header from './components/header';
+import Menu from './components/menu';
+import Card from './components/card';
+import { aboutMe, careerJourneys, interests, menuItems, skills, standOutFacts, values } from './data';
+import List from './components/list';
+import Chart from './components/chart';
+import TextBox from './components/text_box';
+import SubheadingBox from './components/subheading_box';
+import { styled } from 'styled-components';
+import { FaArrowDown } from "react-icons/fa";
+
+const MenuWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (max-width: 600px) {
+    width: 100vw;
+  }
+`;
+
+const MenuSection = styled.div`
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: 5rem 10rem;
+`;
+
+const MenuItem = styled.div`
+  flex-basis: 33%;
+  display: flex;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-basis: 100%;
+  }
+`;
+
+const Section = styled.div`
+  height: 100%;
+  width: 100vw;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10rem 0;
+
+  @media (max-width: 600px) {
+    display: flex;
+  }
+`;
+
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
+`;
 
 function App() {
   const firstDivRef = createRef<HTMLDivElement>();
   const secondDivRef = createRef<HTMLDivElement>();
   const thirdDivRef = createRef<HTMLDivElement>();
+  const fourthDivRef = createRef<HTMLDivElement>();
+  const fifthDivRef = createRef<HTMLDivElement>();
+  const sixthDivRef = createRef<HTMLDivElement>();
 
-  function handleScrollToFirstDiv() {
-    firstDivRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'center'
-    });
+  const [selectedSkillLabel, setSelectedSkillLabel] = useState<string>("");
+  const [selectedExperience, setSelectedExperience] = useState<string>("");
+
+  function onHandleSkillsIndex(clickedIndex: number): void {
+    setSelectedSkillLabel(skills[clickedIndex]?.skill || '');
+    setSelectedExperience(skills[clickedIndex]?.experience || '');
   }
 
-  function handleScrollToSecondDiv() {
-    secondDivRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'center'
-    });
-  }
+  function handleScroll(divRef: string) {
 
-  function handleScrollToThirdDiv() {
-    thirdDivRef.current?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'nearest',
-      inline: 'center'
-    });
+    switch (divRef) {
+      case 'firstDivRef':
+        firstDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      case 'secondDivRef':
+        secondDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      case 'thirdDivRef':
+        thirdDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      case 'fourthDivRef':
+        fourthDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      case 'fifthDivRef':
+        fifthDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      case 'sixthDivRef':
+        sixthDivRef.current?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center'
+        });
+        break;
+      default:
+        break;
+    }
   }
 
   return (
     <>
-      <nav>
-        <section onClick={handleScrollToFirstDiv}>First Section</section>
-        <section onClick={handleScrollToSecondDiv}>Second Section</section>
-        <section onClick={handleScrollToThirdDiv}>Third Section</section>
-      </nav>
+      <MenuWrapper>
+        <Header title="James Tang" type="header" />
+        <MenuSection>
+          {menuItems.map((data, index) => (
+            <MenuItem>
+              <Menu
+                title={data.title}
+                description={data.description}
+                icon={data.icon}
+                index={index}
+                divRef={data.divRef}
+                onClick={handleScroll}
+              />
+            </MenuItem>
+          ))}
+        </MenuSection>
+      </MenuWrapper>
+
       <div>
-        <div
-          style={{
-            height: '80vh',
-            backgroundColor: '#f0f0f0',
-            marginBottom: '20px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
+
+        <Section
           ref={firstDivRef}
         >
-          Content for the first section
-        </div>
-        <div
-          style={{
-            height: '80vh',
-            backgroundColor: '#f0f0f0',
-            marginBottom: '20px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
+          <Header title="About Me" type="header" />
+          <Header title="My story so far..." type="subheader" />
+
+          <List text={aboutMe} />
+
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem', marginBottom: '2rem'}}>
+            <Header title="My life outside of tech" type="subheader" />
+            <CardWrapper>
+              {interests.map((data, index) => (
+                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
+              ))}
+            </CardWrapper>
+          </div>
+
+          <List text={standOutFacts} />
+
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem'}}>
+            <Header title="I especially value..." type="subheader" />
+            <CardWrapper>
+              {values.map((data, index) => (
+                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
+              ))}
+            </CardWrapper>
+          </div>
+
+
+        </Section>
+
+        <Section
           ref={secondDivRef}
         >
-          Content for the second section
-        </div>
+          <Header title="This is my Career Journey so far:" type="header" />
+          <div>
+            <div style={{ display: "flex", justifyContent: "center"}}>
+            </div>
+            <div style={{display: "flex", width: "100%", height: "100%", flexWrap: "wrap", justifyContent: "center"}}>
+              {careerJourneys.map((data) => (
+              <CardWrapper style={{ flexDirection: "column", alignItems: "center", width: "66%"}}>
+                <Header title={data.heading} type="subheader" />
+                <TextBox backgroundColor="rgb(244 114 182)" flexDirection="row">
+                    {data.information.map((data, index) => (
+                      <div style={{display:"flex", width: "50%", justifyContent: "center", margin: "1rem"}}>
+                        <TextBox backgroundColor="rgb(233 213 255)" flexDirection="column">
+                          <Card title={data.title} description={data.description} icon={""} image={""} index={index} />
+                          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: "3rem", flexDirection: "column"}}>
+                            <FaArrowDown />
+                          </div>
+                        </TextBox>
+                      </div>
+                    ))}
+
+                </TextBox>
+              </CardWrapper>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+      </div>
+
+      <Section
+          ref={thirdDivRef}
+        >
+          <Header title="Click to read about my skill:" type="header" />
+          <Chart setSkillIndex={onHandleSkillsIndex} />
+          <TextBox>
+            <div style={{ width: '30%'}}>
+            <SubheadingBox>
+              <Header title={selectedSkillLabel} type="subheader" />
+            </SubheadingBox>
+            <div>
+              {selectedExperience}
+            </div>
+            </div>
+          </TextBox>
+      </Section>
+
         <div
           style={{
             height: '80vh',
+            width: "100vw",
             backgroundColor: '#f0f0f0',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
           }}
-          ref={thirdDivRef}
+          ref={fifthDivRef}
         >
-          Content for the third section
         </div>
-      </div>
+
+        <div
+          style={{
+            height: '80vh',
+            width: "100vw",
+            backgroundColor: '#f0f0f0',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center'
+          }}
+          ref={sixthDivRef}
+        >
+        </div>
+
+
     </>
   );
 }
