@@ -231,13 +231,13 @@ export const interests = [{
 },
 {
     icon: undefined,
-    image: "/personal-website/images/image_two.png",
+    image: "/personal-website/images/image_two.jpg",
     title: "Interests",
     discription: "I enjoy cycling, visiting museums, studying, doing photography, going to the gym, and cooking in my spare time."
 },
 {
     icon: undefined,
-    image: "/personal-website/images/image_three.png",
+    image: "/personal-website/images/image_three.jpg",
     title: "Well-being",
     discription: "I like to look after my wellbeing by doing martial arts. I have practiced taekwondo, kung fu, boxing, judo, and Krav Maga in the past; I am currently training for a marathon."
 }
