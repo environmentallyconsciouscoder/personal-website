@@ -6,7 +6,7 @@ export const projects = [
         name:"Food Waste Monitoring System",
         skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
         link: 'https://softwarecornwall.org/news/cornish-start-up-greenkode-wins-place-on-european-accelerator-programme/',
-        image: "/images/portfolio_one.png",
+        image: "/personal-website/images/portfolio_one.png",
         description: 'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses.'
     },
     {
