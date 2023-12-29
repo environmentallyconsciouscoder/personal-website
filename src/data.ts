@@ -13,14 +13,14 @@ export const projects = [
         name:"Business Intelligence System",
         skills: ['Agile Management', 'Full Stack Development', 'Project Management', 'Users Management'],
         link: 'https://limetrack.earth/',
-        image: "/images/portfolio_two.png",
+        image: "/personal-website/images/portfolio_two.png",
         description: 'Headed a Innovate UK project. Created an interactive map showing UK hospitality business density. Empowering our sales team to choose new network locations. Developed frontend, backend, and database.'
     },
     {
         name:"CRM System",
         skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
         link: 'https://scoopmybin.com/',
-        image: "/images/portfolio_three.png",
+        image: "/personal-website/images/portfolio_three.png",
         description: 'Built a CRM system to sign up new users and manage pilots. The automated onboarding process includes sending emails, completing multiple forms, creating company accounts, and integrating QR codes.'
     }
 ]
@@ -225,19 +225,19 @@ export const standOutFacts = [{
 
 export const interests = [{
     icon: undefined,
-    image: "/images/image.png",
+    image: "/personal-website/images/image.png",
     title: "Giving back to the community",
     discription: "I enjoy speaking in public. I have spoken at different tech events, sharing my knowledge and experience."
 },
 {
     icon: undefined,
-    image: "/images/image_two.jpg",
+    image: "/personal-website/images/image_two.png",
     title: "Interests",
     discription: "I enjoy cycling, visiting museums, studying, doing photography, going to the gym, and cooking in my spare time."
 },
 {
     icon: undefined,
-    image: "/images/image_three.jpg",
+    image: "/personal-website/images/image_three.png",
     title: "Well-being",
     discription: "I like to look after my wellbeing by doing martial arts. I have practiced taekwondo, kung fu, boxing, judo, and Krav Maga in the past; I am currently training for a marathon."
 }
