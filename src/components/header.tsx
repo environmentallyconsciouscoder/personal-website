@@ -12,6 +12,7 @@ const SubheadingStyledDiv = styled.div`
   line-height: 2.25rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  margin: 1rem;
 `;
 
 type HeaderProps = {
