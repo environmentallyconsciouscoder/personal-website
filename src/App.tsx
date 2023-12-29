@@ -2,13 +2,14 @@ import {createRef, useState} from 'react';
 import Header from './components/header';
 import Menu from './components/menu';
 import Card from './components/card';
-import { aboutMe, careerJourneys, interests, menuItems, skills, standOutFacts, values } from './data';
+import { aboutMe, aspirations, careerJourneys, interests, menuItems, projects, skills, standOutFacts, technologies, values } from './data';
 import List from './components/list';
 import Chart from './components/chart';
 import TextBox from './components/text_box';
-import SubheadingBox from './components/subheading_box';
+import Box from './components/box';
 import { styled } from 'styled-components';
 import { FaArrowDown } from "react-icons/fa";
+import ImageComponent from './components/image';
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -226,44 +227,85 @@ function App() {
         >
           <Header title="Click to read about my skill:" type="header" />
           <Chart setSkillIndex={onHandleSkillsIndex} />
-          <TextBox>
-            <div style={{ width: '30%'}}>
-            <SubheadingBox>
-              <Header title={selectedSkillLabel} type="subheader" />
-            </SubheadingBox>
-            <div>
+          <TextBox flexDirection="row">
+            <div style={{ width: '50%', margin: '1rem'}}>
+              <Box>
+                <Header title={selectedSkillLabel} type="subheader" />
+              </Box>
+            <div style={{ margin: '1rem'}}>
               {selectedExperience}
             </div>
             </div>
           </TextBox>
       </Section>
 
-        <div
-          style={{
-            height: '80vh',
-            width: "100vw",
-            backgroundColor: '#f0f0f0',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-          ref={fifthDivRef}
-        >
-        </div>
+      <Section ref={fourthDivRef}>
+        <Header title="My Technical Stack" type="header" />
+        {technologies.map((data) => (
+          <div style={{marginBottom: '1rem', display: "flex", justifyContent: "center", width: '100%'}}>
+            <TextBox flexDirection="row">
+              <div style={{ margin: '1rem', height: '5rem'}}>
+                <Box>
+                    <Header title={data.title} type="subheader" />
+                </Box>
+              </div>
+              <div style={{ margin: '1rem'}}>
+                <Box>
+                  <div style={{padding: "1rem"}}>
+                    {data.technologies.join(', ')}
+                  </div>
+                </Box>
+              </div>
+            </TextBox>
+          </div>
+        ))}
+      </Section>
 
-        <div
-          style={{
-            height: '80vh',
-            width: "100vw",
-            backgroundColor: '#f0f0f0',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-          ref={sixthDivRef}
-        >
-        </div>
+      <Section
+        ref={fifthDivRef}
+      >
+        <Header title="Projects" type="header" />
+              {projects.map((data) => (
+                <div style={{display: "flex", justifyContent: "center", marginTop: "1rem", width: "100%"}}>
+                  <TextBox>
+                  <Box>
+                      <Header title={data.name} type="subheader" />
+                  </Box>
+                  <div style={{display: "flex", justifyContent: "space-between", margin: "1rem 0"}}>
+                    <Box>
+                      <div style={{padding: '1rem'}}><b>Key Skills:</b> {data.skills.join(', ')}</div>
+                      <div style={{padding: '0 0 1rem 1rem'}}>
+                        <a href={data.link} target="_blank" rel="noopener noreferrer">website</a>
+                      </div>
+                    </Box>
+                    <Box>
+                      <ImageComponent image={data.image}></ImageComponent>
+                    </Box>
+                  </div>
+                  <div>
+                    <Box>
+                      <div style={{padding: '1rem'}}>{data.description}</div>
+                    </Box>
+                  </div>
+                </TextBox>
+                </div>
+              ))}
+      </Section>
 
+      <Section
+        ref={sixthDivRef}
+      >
+        <Header title="Aspirations" type="header" />
+        <div style={{marginTop:'1rem', display: "flex", justifyContent: "center"}}>
+          <TextBox>
+            <Box>
+              <div style={{padding: '1rem'}}>
+                {aspirations}
+              </div>
+            </Box>
+          </TextBox>
+        </div>
+      </Section>
 
     </>
   );
