@@ -16,13 +16,13 @@ const StyledDiv = styled.div<{ backgroundColor?: string; flexDirection?: 'row' |
   background-color: ${(props) => props.backgroundColor || 'rgb(244 114 182)'};
   border-radius: 0.75rem;
   width: 66.666667%;
+  // justify-content: space-around;
 
   display: flex;
   flex-direction: ${(props) => props.flexDirection || 'column'}; // Use the prop here
 
   @media (max-width: 600px) {
     flex-wrap: wrap;
-    // align-item: center;
     align-content: center;
     width: 100%;
   }
