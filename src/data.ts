@@ -1,3 +1,63 @@
+
+export const aspirations = "I am a London-based developer, looking for a leadership role and I'd like it to be remoteMy desired start date would be 8 Jan 2024 I like a flexible working pattern best! My preferred work hours are:full time. In six months, I would like to lead a project to gain a comprehensive understanding of the business, integrate smoothly into my team, learn the technology stack, engage with customers to understand who I am building for, share my previous experiences in product development and team management, and learn from my colleagues. In twelve months, I would like to manage my own team. I will share my past experiences in frontend, backend, and AWS services, along with team building and management. Additionally, I will leverage on my entrepreneurship experiences to generate fresh product concepts."
+
+export const projects = [
+    {
+        name:"Food Waste Monitoring System",
+        skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
+        link: 'https://softwarecornwall.org/news/cornish-start-up-greenkode-wins-place-on-european-accelerator-programme/',
+        image: "/images/portfolio_one.png",
+        description: 'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses.'
+    },
+    {
+        name:"Business Intelligence System",
+        skills: ['Agile Management', 'Full Stack Development', 'Project Management', 'Users Management'],
+        link: 'https://limetrack.earth/',
+        image: "/images/portfolio_two.png",
+        description: 'Headed a Innovate UK project. Created an interactive map showing UK hospitality business density. Empowering our sales team to choose new network locations. Developed frontend, backend, and database.'
+    },
+    {
+        name:"CRM System",
+        skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
+        link: 'https://scoopmybin.com/',
+        image: "/images/portfolio_three.png",
+        description: 'Built a CRM system to sign up new users and manage pilots. The automated onboarding process includes sending emails, completing multiple forms, creating company accounts, and integrating QR codes.'
+    }
+]
+
+export const technologies = [
+    {
+      title: 'Proficient',
+      technologies: [
+        'Neo4j', 'D3 Charts', 'chart.js', 'Redux', 'Context API', 'AWS Amplify',
+        'AWS Cron Functions', 'AWS Cognito SDK', 'AWS CLI', 'AWS Javascript SDK',
+        'AWS DynamoDB', 'AWS Cognito User Pools', 'AWS Lambda', 'AWS API Gateway',
+        'AWS CI/CD', 'YAML', 'Swagger', 'Visual Studio Code', 'JSON', 'Python',
+        'Dart', 'Heroku', 'Agile', 'GraphQL', 'Git', 'Gitlab', 'Linux',
+        'Object-oriented Programming', 'Pandas', 'Flutter', 'AWS Code Commit',
+        'Cloud Hosting', 'REST API', 'UX Design', 'Amazon S3', 'JavaScript',
+        'Selenium', 'BeautifulSoup', 'Github Cron', 'NumPy', 'Amazon Cloudwatch',
+        'Bootstrap', 'React', 'SASS', 'CSS', 'HTML', 'Node.js', 'AWS IAM',
+        'Authentication', 'Databases'
+      ]
+    },
+    {
+      title: 'Learning',
+      technologies: [
+        'IntelliJ', 'TypeScript', 'Java', 'UML', 'Maven', 'Spring Boot'
+      ]
+    },
+    {
+      title: 'Exposure',
+      technologies: [
+        'Adobe Illustrator', 'Adobe Photoshop', 'Gatsby', 'Docker', 'MongoDB',
+        'php', 'PostgreSQL', 'WordPress', 'PHPMyAdmin', 'SQL', 'Ruby on Rails',
+        'Tailwind', 'Express.js', 'MongoDB Atlas', 'jQuery', 'Bitbucket',
+        'React Native', 'Chakra UI', 'Vanilla Javascript', 'Terraform'
+      ]
+    }
+  ];
+
 interface Skill {
     skill: string;
     experience: string;
