@@ -6,7 +6,7 @@ const StyledDiv = styled.div`
   border-radius: 0.75rem;
 `;
 
-const SubheadingBox: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Box: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <StyledDiv>
       {children}
@@ -14,4 +14,4 @@ const SubheadingBox: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   );
 };
 
-export default SubheadingBox;
+export default Box;
