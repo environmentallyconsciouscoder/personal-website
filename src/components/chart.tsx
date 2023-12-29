@@ -42,18 +42,19 @@ const Chart: React.FC<ChartProps> = ({ setSkillIndex }) => {
     plugins: {
       legend: {
         display: true,
-        onClick: null,
       },
       tooltip: {
         callbacks: {
-          label: (tooltipItem, data) => {
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any
+          label: (tooltipItem: { label: any; }) => {
             const label = tooltipItem.label;
             return `Click to read more about my ${label}`;
           },
         },
       },
     },
-    onClick: (event: any, elements: any[]) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    onClick: (_event: any, elements: any[]) => {
       if (elements.length > 0) {
         const clickedIndex: number = elements[0].index;
         setSkillIndex(clickedIndex)
