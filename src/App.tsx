@@ -2,7 +2,7 @@ import {createRef, useState} from 'react';
 import Header from './components/header';
 import Menu from './components/menu';
 import Card from './components/card';
-import { aboutMe, aspirations, careerJourneys, interests, menuItems, projects, skills, standOutFacts, technologies, values } from './data';
+import { aboutMe, aspirations, careerJourneys, interests, menuItems, projects, skills, standOutFacts, technologies, values } from './data_two';
 import List from './components/list';
 import Chart from './components/chart';
 import TextBox from './components/text_box';
@@ -78,6 +78,7 @@ function App() {
   const fourthDivRef = createRef<HTMLDivElement>();
   const fifthDivRef = createRef<HTMLDivElement>();
   const sixthDivRef = createRef<HTMLDivElement>();
+  const sevethDivRef = createRef<HTMLDivElement>();
 
   const [selectedSkillLabel, setSelectedSkillLabel] = useState<string>("");
   const [selectedExperience, setSelectedExperience] = useState<string>("");
@@ -132,6 +133,13 @@ function App() {
           inline: 'center'
         });
         break;
+      case 'sevethDivRef':
+        sevethDivRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });
+          break;
       default:
         break;
     }
@@ -141,6 +149,8 @@ function App() {
     <>
       <MenuWrapper>
         <Header title="James Tang" type="header" />
+        <Header title="Full Stack Developer with data science skills" type="subheader" />
+
         <MenuSection>
           {menuItems.map((data, index) => (
             <MenuItem>
@@ -175,6 +185,8 @@ function App() {
               ))}
             </CardWrapper>
           </div>
+
+          <Header title="What makes me stand out?" type="subheader" />
 
           <List text={standOutFacts} />
 
@@ -264,7 +276,7 @@ function App() {
       <Section
         ref={fifthDivRef}
       >
-        <Header title="Projects" type="header" />
+        <Header title="Work Experiences" type="header" />
               {projects.map((data) => (
                 <div style={{display: "flex", justifyContent: "center", marginTop: "1rem", width: "100%"}}>
                   <TextBox>
@@ -294,6 +306,21 @@ function App() {
 
       <Section
         ref={sixthDivRef}
+      >
+        <Header title="Data Science Projects" type="header" />
+        <div style={{marginTop:'1rem', display: "flex", justifyContent: "center"}}>
+          <TextBox>
+            <Box>
+              <div style={{padding: '1rem'}}>
+                Coming Soon!
+              </div>
+            </Box>
+          </TextBox>
+        </div>
+      </Section>
+
+      <Section
+        ref={sevethDivRef}
       >
         <Header title="Aspirations" type="header" />
         <div style={{marginTop:'1rem', display: "flex", justifyContent: "center"}}>
