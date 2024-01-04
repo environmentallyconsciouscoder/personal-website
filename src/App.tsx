@@ -187,7 +187,6 @@ function App() {
           </div>
 
           <Header title="What makes me stand out?" type="subheader" />
-
           <List text={standOutFacts} />
 
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem'}}>

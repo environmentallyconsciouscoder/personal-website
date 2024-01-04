@@ -1,5 +1,5 @@
 
-export const aspirations = "I am a London-based developer, looking for a leadership role and I'd like it to be remoteMy desired start date would be 8 Jan 2024 I like a flexible working pattern best! My preferred work hours are:full time. In six months, I would like to lead a project to gain a comprehensive understanding of the business, integrate smoothly into my team, learn the technology stack, engage with customers to understand who I am building for, share my previous experiences in product development and team management, and learn from my colleagues. In twelve months, I would like to manage my own team. I will share my past experiences in frontend, backend, and AWS services, along with team building and management. Additionally, I will leverage on my entrepreneurship experiences to generate fresh product concepts."
+export const aspirations = "I am a full-stack developer with data science skills, eager to rejoin the tech scene after a career break. I'm seeking a role that is preferably remote or hybrid, as I highly value a flexible working pattern. My preferred work hours are full-time. In the next six months, my goal is to work collaboratively in a team or independently on a project, gaining a comprehensive understanding of the business. I aim to seamlessly integrate into my team, learn the technology stack, and engage with customers to understand for whom I am building. I'm excited to share my previous experiences in product development and team management, as well as to learn from my colleagues. Looking ahead, my career aspiration is to grow within the company I am working for and eventually manage a large team. I will bring my past experiences in frontend, backend, and AWS services, along with my expertise in team building and management. Additionally, I plan to leverage my entrepreneurial experiences to generate fresh product concepts."
 
 export const projects = [
     {
@@ -7,21 +7,21 @@ export const projects = [
         skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
         link: 'https://softwarecornwall.org/news/cornish-start-up-greenkode-wins-place-on-european-accelerator-programme/',
         image: "/personal-website/images/portfolio_one.png",
-        description: 'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses.'
+        description: 'Visualise a high-level summary of the financial and environmental impacts resulting from food waste. Present more granular data, including forecasts and trends, to help users plan their businesses. Additionally, I have created a customer live feed to showcase the positive impact for our B2C clients.'
     },
     {
         name:"Business Intelligence System",
         skills: ['Agile Management', 'Full Stack Development', 'Project Management', 'Users Management'],
         link: 'https://limetrack.earth/',
         image: "/personal-website/images/portfolio_two.png",
-        description: 'Headed a Innovate UK project. Created an interactive map showing UK hospitality business density. Empowering our sales team to choose new network locations. Developed frontend, backend, and database.'
+        description: 'Headed an Innovate UK project, where I created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I developed the frontend, backend, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.'
     },
     {
         name:"CRM System",
         skills: ['Cloud Management', 'Full Stack Development', 'Project Management', 'Stakeholder Management'],
         link: 'https://scoopmybin.com/',
         image: "/personal-website/images/portfolio_three.png",
-        description: 'Built a CRM system to sign up new users and manage pilots. The automated onboarding process includes sending emails, completing multiple forms, creating company accounts, and integrating QR codes.'
+        description: 'Developed a CRM system for onboarding new users and managing pilots. The automated onboarding process incorporates tasks such as sending emails, completing multiple forms, creating company accounts, and integrating QR codes. Additionally, I designed and built a dashboard to display various waste records for our clients.'
     }
 ]
 
@@ -164,6 +164,9 @@ export const careerJourneys = [
         information: [
             {   title: "New mindset for Tech",
                 description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Java and Typescript."
+            },
+            {   title: "Data Science Bootcamp",
+                description: "I am currently in a data science bootcamp which will finish end of March. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."
             }
         ]
     }
@@ -216,13 +219,13 @@ export const menuItems = [{
 export const aboutMe = [{
     text: "I'm eager to rejoin the tech scene after a career break. Previously, I worked on diverse projects for startups, showcasing my full-stack development skills. I'm also adept at learning new technologies, working independently, managing teams, being agile, handling pressure, and collaborating closely with customers.",
 },
-{    text: "During my career break, I learned different technologies and enrolled in a data science bootcamp which will finish end of March. I am aiming to merge my data science skills with my past full-stack development experiences to bring more value to my next company.",
+{    text: "During my career break, I learned different technologies and enrolled in a data science bootcamp which will finish end of March. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products.",
 },
 {   text: "I'm excited about making a positive impact at work, helping customers solve complex technical problems, collaborating with a new team, and learning from each other. Additionally, I look forward to learning new skills and technologies in my new workplace."}
 ]
 
 export const standOutFacts = [{
-    text: "I've started my own startup, where I have worked with clients such as O2 Stadium, Harvey Nichols, the Francis Crick Institute, and more. I have won grants and built my own team. Additionally, I established a podcast series of 37 episodes and got selected for an accelerator program.",
+    text: "I've started my own startup, where I have worked with clients such as O2 Stadium, Harvey Nichols, the Francis Crick Institute, and more. I have won grants and built my own team. Additionally, I established a podcast series of 37 episodes and got selected for an accelerator program. (checkout our podcast: https://podcasts.apple.com/ch/podcast/zero-waste-kode-all-episodes)",
 },
 {    text: "I thrive on challenging myself and pushing beyond my comfort zone. I've confronted personal fears in heights. To conquer this fear, I did bungee jumping. My aim is not only to conquer my own fears but also to inspire those around me to overcome their own challenges in life.",
 },
