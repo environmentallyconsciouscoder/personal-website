@@ -105,7 +105,7 @@ interface Skill {
 
 export const careerJourneys = [
     {
-        heading: "self taught coder",
+        heading: "Learning To Code",
         information: [
             {   title: "My passion for tech",
                 description: "I taught myself how to code by learning online and attending workshops. I was motivated by my aspiration to build great products that can have a big impact on the world. I particularly enjoyed building serverless applications with AWS."
