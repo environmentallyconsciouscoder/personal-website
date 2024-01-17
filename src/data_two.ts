@@ -1,5 +1,5 @@
 
-export const aspirations = "I am a full-stack developer with data science skills, eager to rejoin the tech scene after a career break. I'm seeking a role that is preferably remote or hybrid, as I highly value a flexible working pattern. My preferred work hours are full-time. In the next six months, my goal is to work collaboratively in a team or independently on a project, gaining a comprehensive understanding of the business. I aim to seamlessly integrate into my team, learn the technology stack, and engage with customers to understand for whom I am building. I'm excited to share my previous experiences in product development and team management, as well as to learn from my colleagues. Looking ahead, my career aspiration is to grow within the company I am working for and eventually manage a large team. I will bring my past experiences in frontend, backend, and AWS services, along with my expertise in team building and management. Additionally, I plan to leverage my entrepreneurial experiences to generate fresh product concepts."
+export const aspirations = "I'm seeking a role that is preferably remote or hybrid, as I highly value a flexible working pattern. My preferred work hours are full-time. In the next six months, my goal is to work collaboratively in a team or independently on a project, gaining a comprehensive understanding of the business. I aim to seamlessly integrate into my team, learn the technology stack, and engage with customers to understand for whom I am building. I'm excited to share my previous experiences in product development and team management, as well as to learn from my colleagues. Looking ahead, my career aspiration is to grow within the company I am working for and eventually manage a large team."
 
 export const projects = [
     {
@@ -30,9 +30,9 @@ export const technologies = [
       title: 'Proficient',
       technologies: [
         'Redux', 'Context API', 'AWS Javascript SDK', 'React', 'CSS', 'HTML',
-        'AWS DynamoDB', 'CI/CD', 'Visual Studio Code', 'Python',
+        'CI/CD', 'Visual Studio Code', 'Python',
         'Agile', 'REST API', 'UX Design', 'JavaScript', 'Amazon Cloudwatch',
-        'AWS IAM', 'Databases', 'TypeScript', 'CSS', 'HTML', 'Neo4j',
+        'AWS IAM', 'Databases', 'TypeScript', 'CSS', 'HTML',
       ]
     },
     {
@@ -48,7 +48,7 @@ export const technologies = [
         'Object-oriented Programming', 'Pandas', 'Flutter', 'Dart', 'Heroku','YAML', 'Swagger',
         'AWS Cognito User Pools', 'AWS Lambda', 'AWS API Gateway', 'AWS Cognito SDK', 'AWS CLI',
         'AWS Amplify', 'D3 Charts', 'chart.js', 'AWS Cron Functions', 'JSON', 'Authentication',
-        'GraphQL'
+        'GraphQL',  'Neo4j', 'AWS DynamoDB'
       ]
     }
   ];
@@ -158,7 +158,7 @@ export const careerJourneys = [
         heading: "Tech Returner",
         information: [
             {   title: "New mindset for Tech",
-                description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Java and Typescript."
+                description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Typescript."
             },
             {   title: "Data Science Bootcamp",
                 description: "I am currently in a data science bootcamp which will finish end of March. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."
