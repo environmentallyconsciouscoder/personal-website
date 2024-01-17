@@ -73,7 +73,7 @@ interface Skill {
     },
     3: {
       skill: 'Self development',
-      experience: 'Completed an AI course, system design and Java course on code academy and Linkedin. I am planning to continue my learning in data science and AI.',
+      experience: 'I have completed a full stack refresher course and also enrolled in a data science bootcamp.',
     },
     4: {
       skill: 'Mentorship',
