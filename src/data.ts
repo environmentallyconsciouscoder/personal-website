@@ -119,7 +119,7 @@ export const careerJourneys = [
         heading: "Founded My Own Tech Company",
         information: [
             {   title: "Product Innovator",
-                description: "In my startup, I managed the product development lifecycle of different products from concept to production stage, executing cloud-based solutions for high-profile venues such as O2 Stadium, Harvey Nichols, and the Francis Crick Institute."
+                description: "In my startup, I managed the product development lifecycle of different products from concept to production stage, executing solutions for high-profile venues such as O2 Stadium, Harvey Nichols, and the Francis Crick Institute."
             },
             {   title: "Team & Stakeholder Leadership",
             description: "In my startup, I hired and supervised new developers using AWS tools, Zoom, and Slack. I also organised mobbing sessions with stakeholders like team, investors and advisory board members to explore new strategies and product concepts, as well as reporting our progress."
@@ -163,7 +163,7 @@ export const careerJourneys = [
         heading: "Tech Returner",
         information: [
             {   title: "New mindset for Tech",
-                description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Java and Typescript."
+                description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Typescript."
             }
         ]
     }
