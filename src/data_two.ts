@@ -29,22 +29,10 @@ export const technologies = [
     {
       title: 'Proficient',
       technologies: [
-        'Neo4j', 'D3 Charts', 'chart.js', 'Redux', 'Context API', 'AWS Amplify',
-        'AWS Cron Functions', 'AWS Cognito SDK', 'AWS CLI', 'AWS Javascript SDK',
-        'AWS DynamoDB', 'AWS Cognito User Pools', 'AWS Lambda', 'AWS API Gateway',
-        'AWS CI/CD', 'YAML', 'Swagger', 'Visual Studio Code', 'JSON', 'Python',
-        'Dart', 'Heroku', 'Agile', 'GraphQL', 'Git', 'Gitlab', 'Linux',
-        'Object-oriented Programming', 'Pandas', 'Flutter', 'AWS Code Commit',
-        'Cloud Hosting', 'REST API', 'UX Design', 'Amazon S3', 'JavaScript',
-        'Selenium', 'BeautifulSoup', 'Github Cron', 'NumPy', 'Amazon Cloudwatch',
-        'Bootstrap', 'React', 'SASS', 'CSS', 'HTML', 'Node.js', 'AWS IAM',
-        'Authentication', 'Databases'
-      ]
-    },
-    {
-      title: 'Learning',
-      technologies: [
-        'IntelliJ', 'TypeScript', 'Java', 'UML', 'Maven', 'Spring Boot'
+        'Redux', 'Context API', 'AWS Javascript SDK', 'React', 'CSS', 'HTML',
+        'AWS DynamoDB', 'CI/CD', 'Visual Studio Code', 'Python',
+        'Agile', 'REST API', 'UX Design', 'JavaScript', 'Amazon Cloudwatch',
+        'AWS IAM', 'Databases', 'TypeScript', 'CSS', 'HTML', 'Neo4j',
       ]
     },
     {
@@ -53,7 +41,14 @@ export const technologies = [
         'Adobe Illustrator', 'Adobe Photoshop', 'Gatsby', 'Docker', 'MongoDB',
         'php', 'PostgreSQL', 'WordPress', 'PHPMyAdmin', 'SQL', 'Ruby on Rails',
         'Tailwind', 'Express.js', 'MongoDB Atlas', 'jQuery', 'Bitbucket',
-        'React Native', 'Chakra UI', 'Vanilla Javascript', 'Terraform'
+        'React Native', 'Chakra UI', 'Vanilla Javascript', 'Terraform', 'Node.js',
+        'SASS', 'Bootstrap', 'Selenium', 'BeautifulSoup', 'NumPy',
+        'IntelliJ', 'TypeScript', 'Java', 'UML', 'Maven', 'Spring Boot','Amazon S3',
+        'Github Cron', 'Cloud Hosting', 'AWS Code Commit', 'Git', 'Gitlab', 'Linux',
+        'Object-oriented Programming', 'Pandas', 'Flutter', 'Dart', 'Heroku','YAML', 'Swagger',
+        'AWS Cognito User Pools', 'AWS Lambda', 'AWS API Gateway', 'AWS Cognito SDK', 'AWS CLI',
+        'AWS Amplify', 'D3 Charts', 'chart.js', 'AWS Cron Functions', 'JSON', 'Authentication',
+        'GraphQL'
       ]
     }
   ];
