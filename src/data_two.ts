@@ -29,10 +29,9 @@ export const technologies = [
     {
       title: 'Proficient',
       technologies: [
-        'Redux', 'Context API', 'AWS Javascript SDK', 'React', 'CSS', 'HTML',
+        'Redux', 'Context API', 'AWS Serverless', 'React', 'CSS', 'HTML',
         'CI/CD', 'Visual Studio Code', 'Python',
-        'Agile', 'REST API', 'UX Design', 'JavaScript', 'Amazon Cloudwatch',
-        'AWS IAM', 'Databases', 'TypeScript', 'CSS', 'HTML',
+        'Agile', 'REST API', 'UX Design', 'JavaScript', 'Databases', 'TypeScript', 'CSS', 'HTML',
       ]
     },
     {
@@ -139,7 +138,7 @@ export const careerJourneys = [
                 description: "In my next role as a full-stack developer, I managed an Innovate UK Smart Grant-funded project, co-designing the solution with users, seeking weekly feedback from the CEO and team, and building the MVP and software using lean and agile principles."
             },
             {   title: "Learning new technologies",
-                description: "To meet the specific needs of the Innovate UK Smart Grant-funded project, I learned new technologies for the frontend, backend, and database, such as Python, Selenium, BeautifulSoup, GitHub Actions, NumPy, Pandas, Flutter, Dart, Neo4j, and GraphQL."
+                description: "To meet the specific needs of the Innovate UK Smart Grant-funded project, I learned new technologies for the frontend, backend, and database."
         }
         ]
     },
@@ -227,12 +226,7 @@ export const standOutFacts = [{
 {   text: "I have attained recognitions from teaching, community engagement, and personal development. These accomplishment include Coding Teacher of the Week, UPF Peace Ambassador Award, Dale Carnegie Award, Former UN Youth Delegate and Gravesend Community Award."}
 ]
 
-export const interests = [{
-    icon: undefined,
-    image: "/personal-website/images/image.png",
-    title: "Giving back to the community",
-    discription: "I enjoy speaking in public. I have spoken at different tech events, sharing my knowledge and experience."
-},
+export const interests = [
 {
     icon: undefined,
     image: "/personal-website/images/image_two.jpg",
