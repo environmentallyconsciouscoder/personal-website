@@ -150,6 +150,7 @@ function App() {
       <MenuWrapper>
         <Header title="James Tang" type="header" />
         <Header title="Full Stack Development Meets Data Science" type="subheader" />
+        <Header title="Security Clearance | British Citizen | environmentallyconsciouscoder@gmail.com" type="thirdheader" />
 
         <MenuSection>
           {menuItems.map((data, index) => (

@@ -17,7 +17,7 @@ const SubheadingStyledDiv = styled.div`
 
 type HeaderProps = {
   title: string;
-  type?: 'header' | 'subheader'; // Add a type property
+  type?: 'header' | 'subheader' | 'thirdheader';
 };
 
 const Header: React.FC<HeaderProps> = ({ title, type = 'header' }) => {
@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({ title, type = 'header' }) => {
     <>
       {type === 'header' && <StyledDiv>{title}</StyledDiv>}
       {type === 'subheader' && <SubheadingStyledDiv>{title}</SubheadingStyledDiv>}
+      {type === 'thirdheader' && <div>{title}</div>}
     </>
   );
 };
