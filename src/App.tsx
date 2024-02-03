@@ -10,6 +10,7 @@ import Box from './components/box';
 import { styled } from 'styled-components';
 import { FaArrowDown } from "react-icons/fa";
 import ImageComponent from './components/image';
+import Footer from './components/footer';
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -79,6 +80,7 @@ function App() {
   const fifthDivRef = createRef<HTMLDivElement>();
   const sixthDivRef = createRef<HTMLDivElement>();
   const sevethDivRef = createRef<HTMLDivElement>();
+  const eightDivRef = createRef<HTMLDivElement>();
 
   const [selectedSkillLabel, setSelectedSkillLabel] = useState<string>("");
   const [selectedExperience, setSelectedExperience] = useState<string>("");
@@ -135,6 +137,13 @@ function App() {
         break;
       case 'sevethDivRef':
         sevethDivRef.current?.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest',
+            inline: 'center'
+          });
+          break;
+      case 'eightDivRef':
+        eightDivRef.current?.scrollIntoView({
             behavior: 'smooth',
             block: 'nearest',
             inline: 'center'
@@ -332,6 +341,12 @@ function App() {
             </Box>
           </TextBox>
         </div>
+      </Section>
+
+      <Section
+        ref={eightDivRef}
+      >
+        <Footer/>
       </Section>
 
     </>

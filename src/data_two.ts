@@ -207,6 +207,12 @@ export const menuItems = [{
     title: "Aspirations",
     description: "a brief summary of what i'm looking for in my next position",
     divRef: "sevethDivRef"
+},
+{
+    icon: "",
+    title: "Contact Me",
+    description: "Get in Touch",
+    divRef: "eightDivRef"
 }
 ]
 
