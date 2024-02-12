@@ -244,6 +244,12 @@ export const interests = [
     image: "/personal-website/images/image_three.jpg",
     title: "Well-being",
     discription: "I like to take care of my mental health and well-being by practicing meditation, going to the gym, and boxing. Currently, I am training for a marathon."
+},
+{
+    icon: undefined,
+    image: "/personal-website/images/image.png",
+    title: "Well-being",
+    discription: "I am a member of BCS. Additionally, I have spoken at tech events in the past. I have also set up and led a team of developers in an open-source project where I am building a social media platform."
 }
 ]
 
