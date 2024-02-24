@@ -55,7 +55,7 @@ const Section = styled.div<{ $primary?: boolean; }>`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: ${props => props.$primary ? "5rem 0" : "10rem 0"};
+  margin: ${props => props.$primary ? "0" : "10rem 0"};
 
   @media (max-width: 600px) {
     display: flex;
@@ -160,8 +160,10 @@ function App() {
       <MenuWrapper>
         <Header title="James Tang" type="header" />
         <Header title="Full Stack Development Meets Data Science" type="subheader" />
-        <Header title="Security Clearance | British Citizen | environmentallyconsciouscoder@gmail.com" type="thirdheader" />
-
+        <strong>Looking for a React and Python Developer job</strong>
+        <strong>Clearance Status: Security Clearance</strong>
+        <strong>British Citizen</strong>
+        <strong>environmentallyconsciouscoder@gmail.com</strong>
         <MenuSection>
           {menuItems.map((data, index) => (
             <MenuItem>
