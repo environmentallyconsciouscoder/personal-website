@@ -183,15 +183,51 @@ function App() {
 
       <div>
 
-        <Section
-          $primary
-          ref={firstDivRef}
+      <Section ref={firstDivRef} $primary>
+        <Header title="My Technical Stack" type="header" />
+        {technologies.map((data) => (
+          <div style={{marginBottom: '1rem', display: "flex", justifyContent: "center", width: '100%'}}>
+            <TextBox flexDirection="row">
+              <div style={{ margin: '1rem', height: '5rem'}}>
+                <Box>
+                    <Header title={data.title} type="subheader" />
+                </Box>
+              </div>
+              <div style={{ margin: '1rem'}}>
+                <Box>
+                  <div style={{padding: "1rem"}}>
+                    {data.technologies.join(', ')}
+                  </div>
+                </Box>
+              </div>
+            </TextBox>
+          </div>
+        ))}
+      </Section>
+
+      <Section
+          ref={secondDivRef}
+        >
+          <Header title="Click to read about my skill:" type="header" />
+          <Chart setSkillIndex={onHandleSkillsIndex} />
+          <TextBox flexDirection="row">
+            <div style={{ width: '50%', margin: '1rem'}}>
+              <Box>
+                <Header title={selectedSkillLabel} type="subheader" />
+              </Box>
+            <div style={{ margin: '1rem'}}>
+              {selectedExperience}
+            </div>
+            </div>
+          </TextBox>
+      </Section>
+
+      <Section
+          ref={thirdDivRef}
         >
           <Header title="About Me" type="header" />
           <Header title="My story so far..." type="subheader" />
-
           <List text={aboutMe} />
-
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem', marginBottom: '2rem'}}>
             <Header title="My life outside of tech" type="subheader" />
             <CardWrapper>
@@ -200,10 +236,8 @@ function App() {
               ))}
             </CardWrapper>
           </div>
-
           <Header title="What makes me stand out?" type="subheader" />
           <List text={standOutFacts} />
-
           <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem'}}>
             <Header title="I especially value..." type="subheader" />
             <CardWrapper>
@@ -212,12 +246,10 @@ function App() {
               ))}
             </CardWrapper>
           </div>
-
-
         </Section>
 
         <Section
-          ref={secondDivRef}
+          ref={fourthDivRef}
         >
           <Header title="This is my Career Journey so far:" type="header" />
           <div>
@@ -248,44 +280,8 @@ function App() {
 
       </div>
 
-      <Section
-          ref={thirdDivRef}
-        >
-          <Header title="Click to read about my skill:" type="header" />
-          <Chart setSkillIndex={onHandleSkillsIndex} />
-          <TextBox flexDirection="row">
-            <div style={{ width: '50%', margin: '1rem'}}>
-              <Box>
-                <Header title={selectedSkillLabel} type="subheader" />
-              </Box>
-            <div style={{ margin: '1rem'}}>
-              {selectedExperience}
-            </div>
-            </div>
-          </TextBox>
-      </Section>
 
-      <Section ref={fourthDivRef}>
-        <Header title="My Technical Stack" type="header" />
-        {technologies.map((data) => (
-          <div style={{marginBottom: '1rem', display: "flex", justifyContent: "center", width: '100%'}}>
-            <TextBox flexDirection="row">
-              <div style={{ margin: '1rem', height: '5rem'}}>
-                <Box>
-                    <Header title={data.title} type="subheader" />
-                </Box>
-              </div>
-              <div style={{ margin: '1rem'}}>
-                <Box>
-                  <div style={{padding: "1rem"}}>
-                    {data.technologies.join(', ')}
-                  </div>
-                </Box>
-              </div>
-            </TextBox>
-          </div>
-        ))}
-      </Section>
+
 
       <Section
         ref={fifthDivRef}

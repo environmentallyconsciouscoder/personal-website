@@ -166,54 +166,55 @@ export const careerJourneys = [
     }
 ]
 
-export const menuItems = [{
-    icon: "",
-    title: "About Me",
-    description: "learn more about who i am outside of work",
-    divRef: "firstDivRef"
-},
-{
-    icon: "",
-    title: "Career Journey",
-    description: "explore my career path to date",
-    divRef: "secondDivRef"
-},
-{
-    icon: "",
-    title: "Skills",
-    description: "see how i can add value to your organisation",
-    divRef: "thirdDivRef"
-},
-{
-    icon: "",
-    title: "Tech Stack",
-    description: "learn more about my technical experience",
-    divRef: "fourthDivRef"
-},
-{
-    icon: "",
-    title: "Work Experiences",
-    description: "look at a portfolio of my technical projects",
-    divRef: "fifthDivRef"
-},
-{
-    icon: "",
-    title: "Data Science Projects",
-    description: "look at a portfolio of my data science projects",
-    divRef: "sixthDivRef"
-},
-{
-    icon: "",
-    title: "Aspirations",
-    description: "a brief summary of what i'm looking for in my next position",
-    divRef: "sevethDivRef"
-},
-{
-    icon: "",
-    title: "Contact Me",
-    description: "Get in Touch",
-    divRef: "eightDivRef"
-}
+export const menuItems = [
+    {
+        icon: "",
+        title: "Skills",
+        description: "see how i can add value to your organisation",
+        divRef: "firstDivRef"
+    },
+    {
+        icon: "",
+        title: "Tech Stack",
+        description: "learn more about my technical experience",
+        divRef: "secondDivRef"
+    },
+    {
+        icon: "",
+        title: "About Me",
+        description: "learn more about who i am outside of work",
+        divRef: "thirdDivRef"
+    },
+    {
+        icon: "",
+        title: "Career Journey",
+        description: "explore my career path to date",
+        divRef: "FourthDivRef"
+    },
+    {
+        icon: "",
+        title: "Work Experiences",
+        description: "look at a portfolio of my technical projects",
+        divRef: "fifthDivRef"
+    },
+    {
+        icon: "",
+        title: "Data Science Projects",
+        description: "look at a portfolio of my data science projects",
+        divRef: "sixthDivRef"
+    },
+    {
+        icon: "",
+        title: "Aspirations",
+        description: "a brief summary of what i'm looking for in my next position",
+        divRef: "sevethDivRef"
+    },
+    {
+        icon: "",
+        title: "Contact Me",
+        description: "Get in Touch",
+        divRef: "eightDivRef"
+    }
 ]
 
 export const aboutMe = [{
