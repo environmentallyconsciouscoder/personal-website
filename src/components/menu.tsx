@@ -36,7 +36,7 @@ const StyledCard = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 10rem;
+    height: 5rem;
 `;
 
 const StyledDescription = styled.div`
