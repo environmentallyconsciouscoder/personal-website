@@ -169,14 +169,14 @@ export const careerJourneys = [
 export const menuItems = [
     {
         icon: "",
-        title: "Skills",
-        description: "see how i can add value to your organisation",
+        title: "Tech Stack",
+        description: "learn more about my technical experience",
         divRef: "firstDivRef"
     },
     {
         icon: "",
-        title: "Tech Stack",
-        description: "learn more about my technical experience",
+        title: "Skills",
+        description: "see how i can add value to your organisation",
         divRef: "secondDivRef"
     },
     {
