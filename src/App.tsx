@@ -47,7 +47,7 @@ const MenuItem = styled.div`
   }
 `;
 
-const Section = styled.div`
+const Section = styled.div<{ $primary?: boolean; }>`
   height: 100%;
   width: 100vw;
   margin-bottom: 20px;
@@ -55,12 +55,13 @@ const Section = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 10rem 0;
+  margin: ${props => props.$primary ? "5rem 0" : "10rem 0"};
 
   @media (max-width: 600px) {
     display: flex;
   }
 `;
+
 
 const CardWrapper = styled.div`
   display: flex;
@@ -177,9 +178,11 @@ function App() {
         </MenuSection>
       </MenuWrapper>
 
+
       <div>
 
         <Section
+          $primary
           ref={firstDivRef}
         >
           <Header title="About Me" type="header" />
@@ -348,6 +351,8 @@ function App() {
       >
         <Footer/>
       </Section>
+
+
 
     </>
   );
