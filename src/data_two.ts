@@ -238,13 +238,13 @@ export const interests = [
     icon: undefined,
     image: "/personal-website/images/image_two.jpg",
     title: "Interests",
-    discription: "I enjoy cycling, visiting museums, studying, doing photography, going to the gym, and cooking in my spare time."
+    discription: "I enjoy cycling, visiting museums, blogging, and cooking in my spare time."
 },
 {
     icon: undefined,
     image: "/personal-website/images/image_three.jpg",
-    title: "Well-being",
-    discription: "I like to take care of my mental health and well-being by practicing meditation, going to the gym, and boxing. Currently, I am training for a marathon."
+    title: "Sports",
+    discription: "I enjoy going to the gym, boxing, and jogging. I am currently training for the half marathon."
 },
 {
     icon: undefined,
