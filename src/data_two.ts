@@ -248,7 +248,7 @@ export const interests = [
 },
 {
     icon: undefined,
-    image: "/personal-website/images/image.png",
+    image: "/personal-website/images/image_new.png",
     title: "Community",
     discription: "I am a member of BCS. Additionally, I have spoken at tech events in the past. I have also set up and led a team of developers in an open-source project where I am building a social media platform."
 }
