@@ -158,7 +158,7 @@ function App() {
   return (
     <>
       <MenuWrapper>
-        <Header title="James Tang" type="header" />
+        <Header title="James T" type="header" />
         <Header title="Full Stack Development Meets Data Science" type="subheader" />
         <strong>Looking for a React and Python Developer job</strong>
         <strong>Clearance Status: Security Clearance</strong>
