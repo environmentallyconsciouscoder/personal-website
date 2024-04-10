@@ -2,7 +2,7 @@ import {createRef, useState} from 'react';
 import Header from './components/header';
 import Menu from './components/menu';
 import Card from './components/card';
-import { aboutMe, aspirations, careerJourneys, interests, menuItems, projects, skills, standOutFacts, technologies, values } from './data_two';
+import { aboutMe, aspirations, careerJourneys, interests, menuItems, projects, projectsTwo, skills, standOutFacts, technologies, values } from './data_two';
 import List from './components/list';
 import Chart from './components/chart';
 import TextBox from './components/text_box';
@@ -11,6 +11,7 @@ import { styled } from 'styled-components';
 import { FaArrowDown } from "react-icons/fa";
 import ImageComponent from './components/image';
 import Footer from './components/footer';
+import { device } from './media_queries';
 
 const MenuWrapper = styled.div`
   display: flex;
@@ -23,8 +24,8 @@ const MenuWrapper = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 600px) {
-    width: 100vw;
+  @media ${device.md} {
+    width: 100%;
   }
 `;
 
@@ -41,15 +42,15 @@ const MenuItem = styled.div`
   flex-basis: 33%;
   display: flex;
 
-  @media (max-width: 600px) {
-    display: flex;
+  @media ${device.md} {
     flex-basis: 100%;
+    display: flex;
   }
 `;
 
 const Section = styled.div<{ $primary?: boolean; }>`
   height: 100%;
-  width: 100vw;
+  width: 100%;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -57,8 +58,9 @@ const Section = styled.div<{ $primary?: boolean; }>`
   flex-direction: column;
   margin: ${props => props.$primary ? "0" : "10rem 0"};
 
-  @media (max-width: 600px) {
+  @media ${device.md} {
     display: flex;
+    width: 100%;
   }
 `;
 
@@ -68,10 +70,21 @@ const CardWrapper = styled.div`
   flex-direction: row;
   margin: 1rem;
 
-  @media (max-width: 600px) {
+  @media ${device.md} {
     flex-direction: column;
   }
 `;
+
+const CardWrapperTwo = styled.div`
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+`;
+
 
 function App() {
   const firstDivRef = createRef<HTMLDivElement>();
@@ -92,7 +105,6 @@ function App() {
   }
 
   function handleScroll(divRef: string) {
-
     switch (divRef) {
       case 'firstDivRef':
         firstDivRef.current?.scrollIntoView({
@@ -160,7 +172,7 @@ function App() {
       <MenuWrapper>
         <Header title="James T" type="header" />
         <Header title="Full Stack Development Meets Data Science" type="subheader" />
-        <strong>Looking for a React and Python Developer job</strong>
+        {/* <strong>Looking for a React and Python Developer job</strong> */}
         <strong>Clearance Status: Security Clearance</strong>
         <strong>British Citizen</strong>
         <strong>environmentallyconsciouscoder@gmail.com</strong>
@@ -223,7 +235,7 @@ function App() {
       </Section>
 
       <Section
-          ref={thirdDivRef}
+          // ref={thirdDivRef}
         >
           <Header title="About Me" type="header" />
           <Header title="My story so far..." type="subheader" />
@@ -255,9 +267,9 @@ function App() {
           <div>
             <div style={{ display: "flex", justifyContent: "center"}}>
             </div>
-            <div style={{display: "flex", width: "100%", height: "100%", flexWrap: "wrap", justifyContent: "center"}}>
+            <div style={{display: "flex", height: "100%", flexWrap: "wrap", justifyContent: "center"}}>
               {careerJourneys.map((data) => (
-              <CardWrapper style={{ flexDirection: "column", alignItems: "center", width: "66%"}}>
+              <CardWrapperTwo>
                 <Header title={data.heading} type="subheader" />
                 <TextBox backgroundColor="rgb(244 114 182)" flexDirection="row">
                     {data.information.map((data, index) => (
@@ -270,9 +282,8 @@ function App() {
                         </TextBox>
                       </div>
                     ))}
-
                 </TextBox>
-              </CardWrapper>
+              </CardWrapperTwo>
               ))}
             </div>
           </div>
@@ -317,16 +328,32 @@ function App() {
       <Section
         ref={sixthDivRef}
       >
-        <Header title="Data Science Projects" type="header" />
-        <div style={{marginTop:'1rem', display: "flex", justifyContent: "center"}}>
-          <TextBox>
-            <Box>
-              <div style={{padding: '1rem'}}>
-                Coming Soon!
-              </div>
-            </Box>
-          </TextBox>
-        </div>
+        <Header title="Data Science & ML Projects" type="header" />
+        {projectsTwo.map((data) => (
+                <div style={{display: "flex", justifyContent: "center", marginTop: "1rem", width: "100%"}}>
+                  <TextBox>
+                  <Box>
+                      <Header title={data.name} type="subheader" />
+                  </Box>
+                  <div style={{display: "flex", justifyContent: "space-between", margin: "1rem 0"}}>
+                    <Box>
+                      <div style={{padding: '1rem'}}><b>Key Skills:</b> {data.skills.join(', ')}</div>
+                      <div style={{padding: '0 0 1rem 1rem'}}>
+                        {/* <a href={data.link} target="_blank" rel="noopener noreferrer">website</a> */}
+                      </div>
+                    </Box>
+                    <Box>
+                      <ImageComponent image={data.image}></ImageComponent>
+                    </Box>
+                  </div>
+                  <div>
+                    <Box>
+                      <div style={{padding: '1rem'}}>{data.description}</div>
+                    </Box>
+                  </div>
+                </TextBox>
+                </div>
+              ))}
       </Section>
 
       <Section
