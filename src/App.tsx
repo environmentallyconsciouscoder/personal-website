@@ -25,7 +25,8 @@ const MenuWrapper = styled.div`
   }
 
   @media ${device.md} {
-    width: 100%;
+    // width: 100%;
+    width: 100vw;
   }
 `;
 

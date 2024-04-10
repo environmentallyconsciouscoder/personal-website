@@ -48,6 +48,11 @@ const StyledDescription = styled.div`
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     margin: 0;
+
+    @media ${device.md} {
+      font-size: 10px;
+      line-height: 10px;
+    }
 `;
 
 const StyledIconAndTitle = styled.div`
@@ -70,6 +75,11 @@ const StyledTitle = styled.div`
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
+
+    @media ${device.md} {
+      font-size: 1rem;
+      line-height: 15px;
+    }
 `;
 
 type HeaderProps = {
