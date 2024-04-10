@@ -265,7 +265,8 @@ Error generating stack: `+s.message+`
 
   @media ${Yi.md} {
     display: flex;
-    width: 100%;
+    // width: 100%;
+    width: 100vw;
   }
 `,yh=X.div`
   display: flex;
