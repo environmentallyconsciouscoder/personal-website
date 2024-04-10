@@ -60,7 +60,8 @@ const Section = styled.div<{ $primary?: boolean; }>`
 
   @media ${device.md} {
     display: flex;
-    width: 100%;
+    // width: 100%;
+    width: 100vw;
   }
 `;
 
