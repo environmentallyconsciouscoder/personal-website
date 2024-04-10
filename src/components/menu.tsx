@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import ImageComponent from './image';
+import { device } from '../media_queries';
 
 const StyledCardWrapper = styled.div`
     padding: 1.5rem;
@@ -15,18 +16,19 @@ const StyledCardWrapper = styled.div`
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
 
-    @media (max-width: 600px) {
+    @media ${device.md} {
       padding: 1.5rem;
       --tw-bg-opacity: 1;
       background-color: rgb(108 40 134 / var(--tw-bg-opacity));
       border-width: 1px;
       border-radius: 0.5rem;
-      width: 20rem;
+      // width: 20rem;
       border-style: solid;
       border-color: #e5e7eb;
       box-sizing: border-box;
       --tw-text-opacity: 1;
       color: rgb(255 255 255 / var(--tw-text-opacity));
+      width: 100%;
     }
 `;
 
