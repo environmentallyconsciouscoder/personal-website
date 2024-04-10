@@ -25,20 +25,32 @@ export const projects = [
     }
 ]
 
+export const projectsTwo = [
+    {
+        name:"Auto ML Platform",
+        skills: ['mySQL', 'Fast API', 'Vite', 'Open AI', 'scikit-learn'],
+        link: '',
+        image: "/personal-website/images/auto_ml_platform.png",
+        description: 'There are 12 different machine learning algorithms integrated on this platform. You can also have a conversation with a chatbot that will only answer machine learning questions.'
+    }
+]
+
 export const technologies = [
     {
       title: 'Proficient',
       technologies: [
-        'Redux', 'Context API', 'AWS Serverless', 'React', 'CSS', 'HTML',
-        'CI/CD', 'Visual Studio Code', 'Python',
-        'Agile', 'REST API', 'UX Design', 'JavaScript', 'Databases', 'TypeScript', 'CSS', 'HTML',
+        'React', 'Redux', 'Context API', 'AWS Serverless', 'CSS', 'HTML',
+        'CI/CD', 'Docker', 'Visual Studio Code', 'Python',
+        'Agile', 'REST API', 'UX Design', 'JavaScript', 'Databases', 'TypeScript',
+        'Scikit-learn', 'EDA', 'Jupyter Notebook', 'Neo4j', 'AWS DynamoDB',
+        'FastAPI', 'Swagger API', 'Vite', 'Vitest', 'Unit Test', 'Vercel', 'Open AI', 'Google Colab', 'Stable Diffusion'
       ]
     },
     {
       title: 'Exposure',
       technologies: [
         'Adobe Illustrator', 'Adobe Photoshop', 'Gatsby', 'Docker', 'MongoDB',
-        'php', 'PostgreSQL', 'WordPress', 'PHPMyAdmin', 'SQL', 'Ruby on Rails',
+        'php', 'PostgreSQL', 'WordPress', 'PHPMyAdmin', 'mySQL', 'Ruby on Rails',
         'Tailwind', 'Express.js', 'MongoDB Atlas', 'jQuery', 'Bitbucket',
         'React Native', 'Chakra UI', 'Vanilla Javascript', 'Terraform', 'Node.js',
         'SASS', 'Bootstrap', 'Selenium', 'BeautifulSoup', 'NumPy',
@@ -46,8 +58,7 @@ export const technologies = [
         'Github Cron', 'Cloud Hosting', 'AWS Code Commit', 'Git', 'Gitlab', 'Linux',
         'Object-oriented Programming', 'Pandas', 'Flutter', 'Dart', 'Heroku','YAML', 'Swagger',
         'AWS Cognito User Pools', 'AWS Lambda', 'AWS API Gateway', 'AWS Cognito SDK', 'AWS CLI',
-        'AWS Amplify', 'D3 Charts', 'chart.js', 'AWS Cron Functions', 'JSON', 'Authentication',
-        'GraphQL',  'Neo4j', 'AWS DynamoDB'
+        'AWS Amplify', 'D3 Charts', 'chart.js', 'AWS Cron Functions', 'JSON', 'Authentication', 'GraphQL', 'TensorFlow', 'UML Design'
       ]
     }
   ];
@@ -159,8 +170,8 @@ export const careerJourneys = [
             {   title: "New mindset for Tech",
                 description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Typescript."
             },
-            {   title: "Data Science Bootcamp",
-                description: "I am currently in a data science bootcamp which will finish end of March. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."
+            {   title: "Data Science & AI Bootcamp",
+                description: "I enrolled in a data science and AI bootcamp which will finish at the end of April. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."
             }
         ]
     }
@@ -189,7 +200,7 @@ export const menuItems = [
         icon: "",
         title: "Career Journey",
         description: "explore my career path to date",
-        divRef: "FourthDivRef"
+        divRef: "fourthDivRef"
     },
     {
         icon: "",
@@ -218,11 +229,14 @@ export const menuItems = [
 ]
 
 export const aboutMe = [{
-    text: "I'm eager to rejoin the tech scene after a career break. Previously, I worked on diverse projects for startups, showcasing my full-stack development skills. I'm also adept at learning new technologies, working independently, managing teams, being agile, handling pressure, and collaborating closely with customers.",
+    text: "I have 4.5 years of prior experience as a CTO, lead developer, and full-stack developer in several startups, which enabled me to acquire a diverse set of technical and non-technical skills.",
 },
-{    text: "During my career break, I learned different technologies and enrolled in a data science bootcamp which will finish end of March. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products.",
+{    text: "I'm eager to rejoin the tech scene after a career break. Previously, I worked on diverse projects for startups, showcasing my full-stack development skills. I'm also adept at learning new technologies, working independently, managing teams, being agile, handling pressure, and collaborating closely with customers.",
 },
-{   text: "I'm excited about making a positive impact at work, helping customers solve complex technical problems, collaborating with a new team, and learning from each other. Additionally, I look forward to learning new skills and technologies in my new workplace."}
+{   text: "During my career break, I learned different technologies and enrolled in a data science and AI bootcamp which will finish at the end of April."}
+,
+{   text: "I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."},
+{ text: "I'm excited about making a positive impact at work, helping customers solve complex technical problems, collaborating with a new team, and learning from each other. Additionally, I look forward to learning new skills and technologies in my new workplace."}
 ]
 
 export const standOutFacts = [{
