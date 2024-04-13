@@ -237,7 +237,7 @@ function App() {
       </Section>
 
       <Section
-          // ref={thirdDivRef}
+          ref={thirdDivRef}
         >
           <Header title="About Me" type="header" />
           <Header title="My story so far..." type="subheader" />
