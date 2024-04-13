@@ -171,7 +171,7 @@ export const careerJourneys = [
                 description: "I joined Tech Returners after I didn't manage to secure enough investment for my new venture. I saw the programme as a great opportunity. I refreshed my skills by taking part in mindset sessions and learning new tech such as Typescript."
             },
             {   title: "Data Science & AI Bootcamp",
-                description: "I enrolled in a data science and AI bootcamp which will finish at the end of April. I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."
+                description: "I enrolled in a data science and AI bootcamp, where I trained various machine learning models, fine-tuned them, and integrated them with full-stack development"
             }
         ]
     }
