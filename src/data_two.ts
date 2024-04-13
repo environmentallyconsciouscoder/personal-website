@@ -231,12 +231,10 @@ export const menuItems = [
 export const aboutMe = [{
     text: "I have 4.5 years of prior experience as a CTO, lead developer, and full-stack developer in several startups, which enabled me to acquire a diverse set of technical and non-technical skills.",
 },
-{    text: "I'm eager to rejoin the tech scene after a career break. Previously, I worked on diverse projects for startups, showcasing my full-stack development skills. I'm also adept at learning new technologies, working independently, managing teams, being agile, handling pressure, and collaborating closely with customers.",
+{    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
 },
-{   text: "During my career break, I learned different technologies and enrolled in a data science and AI bootcamp which will finish at the end of April."}
-,
-{   text: "I aim to integrate my data science skills with my previous full-stack development experiences to create more valuable products."},
-{ text: "I'm excited about making a positive impact at work, helping customers solve complex technical problems, collaborating with a new team, and learning from each other. Additionally, I look forward to learning new skills and technologies in my new workplace."}
+{   text: "Passionate about working with Generative AI, I have experience in image generation API, RAG, LLM, OpenAI API, prompt engineering, stable diffusion, and computer vision API."},
+{ text: "I'm excited about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other."}
 ]
 
 export const standOutFacts = [{
