@@ -28,10 +28,10 @@ export const projects = [
 export const projectsTwo = [
     {
         name:"Auto ML Platform",
-        skills: ['mySQL', 'Fast API', 'Vite', 'Open AI', 'scikit-learn'],
+        skills: ['mySQL', 'Fast API', 'Vite', 'Open AI', 'scikit-learn', 'TensorFlow', 'matplotlib', 'pandas'],
         link: '',
         image: "/personal-website/images/auto_ml_platform.png",
-        description: 'There are 12 different machine learning algorithms integrated on this platform. You can also have a conversation with a chatbot that will only answer machine learning questions.'
+        description: 'I have prototyped a no-code platform for performing data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions'
     }
 ]
 
