@@ -233,7 +233,7 @@ export const aboutMe = [{
 },
 {    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
 },
-{   text: "Passionate about working with Generative AI, I have experience in image generation API, RAG, LLM, OpenAI API, prompt engineering, stable diffusion, and computer vision API."},
+{   text: "Passionate about working with Generative AI, I have played with various GPT models using the Transformers Library (Hugging Face) to complete tasks such as text generation and image generation. Additionally, I have played with the OpenAI API, Prompt Engineering, RAG, Vercel NextJS AI SDK, and LLM developer tools, including text generation web UI and stable diffusion web UI."},
 { text: "I'm excited about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other."}
 ]
 
