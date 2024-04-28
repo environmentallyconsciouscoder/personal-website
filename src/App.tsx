@@ -341,7 +341,7 @@ function App() {
                     <Box>
                       <div style={{padding: '1rem'}}><b>Key Skills:</b> {data.skills.join(', ')}</div>
                       <div style={{padding: '0 0 1rem 1rem'}}>
-                        {/* <a href={data.link} target="_blank" rel="noopener noreferrer">website</a> */}
+                        {data.link && <a href={data.link} target="_blank" rel="noopener noreferrer">website</a>}
                       </div>
                     </Box>
                     <Box>

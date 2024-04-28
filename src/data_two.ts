@@ -31,7 +31,14 @@ export const projectsTwo = [
         skills: ['mySQL', 'Fast API', 'Vite', 'Open AI', 'scikit-learn', 'TensorFlow', 'matplotlib', 'pandas'],
         link: '',
         image: "/personal-website/images/auto_ml_platform.png",
-        description: 'I have prototyped a no-code platform for performing data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions'
+        description: 'Prototyped a no-code platform for performing data science and machine learning tasks. Users can upload their CSV files and choose their parameters. They can also chat with OpenAI to ask machine learning-related questions'
+    },
+    {
+        name:"Financial Sentiment Analysis Platform",
+        skills: ['Next.js', 'React.js', 'Taiwind', 'Hugging Faces Transformers Library (financial sentiment analysis and summarization)', 'Fast API', 'MySQL'],
+        link: 'https://www.youtube.com/shorts/LO-5uvN3y8Y',
+        image: "/personal-website/images/market_sentiment_app.png",
+        description: 'Prototyped an AI-driven Financial Sentiment Analysis app for analyzing news articles in real time.'
     }
 ]
 
