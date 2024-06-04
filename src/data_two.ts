@@ -236,7 +236,7 @@ export const menuItems = [
 ]
 
 export const aboutMe = [{
-    text: "I have gained experience working as a CTO, lead developer, and full-stack developer in multiple startups, which has allowed me to acquire a diverse set of both technical and non-technical skills.",
+    text: "I've transitioned into specialising in Data Engineering after nearly five years working as a CTO, lead developer, and full-stack developer across multiple startups. This experience has equipped me with a diverse set of both technical and non-technical skills.",
 },
 {    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
 },
