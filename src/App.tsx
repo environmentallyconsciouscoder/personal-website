@@ -202,12 +202,12 @@ function App() {
         {technologies.map((data) => (
           <div style={{marginBottom: '1rem', display: "flex", justifyContent: "center", width: '100%'}}>
             <TextBox flexDirection="row">
-              <div style={{ margin: '1rem', height: '5rem'}}>
+              <div style={{ margin: '1rem', height: '100%'}}>
                 <Box>
                     <Header title={data.title} type="subheader" />
                 </Box>
               </div>
-              <div style={{ margin: '1rem'}}>
+              <div style={{ height: '100%', display: "flex", alignItems: "center"}}>
                 <Box>
                   <div style={{padding: "1rem"}}>
                     {data.technologies.join(', ')}

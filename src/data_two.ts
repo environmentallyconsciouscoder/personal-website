@@ -44,6 +44,12 @@ export const projectsTwo = [
 
 export const technologies = [
     {
+        title: 'Data Engineer Skills',
+        technologies: [
+          'Azure Databricks', 'Azure Data Factory', 'Azure Data Lake', 'Apache Spark', 'Python', 'SQL'
+        ]
+      },
+    {
       title: 'Proficient',
       technologies: [
         'React', 'Redux', 'Context API', 'AWS Serverless', 'CSS', 'HTML',
@@ -235,13 +241,22 @@ export const menuItems = [
     }
 ]
 
-export const aboutMe = [{
-    text: "I've transitioned into specialising in Data Engineering after nearly five years working as a CTO, lead developer, and full-stack developer across multiple startups. This experience has equipped me with a diverse set of both technical and non-technical skills.",
-},
-{    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
-},
-{   text: "Passionate about working with Generative AI, I have played with various GPT models using the Transformers Library (Hugging Face) to complete tasks such as text generation and image generation. Additionally, I have played with the OpenAI API, Prompt Engineering, RAG, Vercel NextJS AI SDK, and LLM developer tools, including text generation web UI and stable diffusion web UI."},
-{ text: "I'm excited about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other."}
+export const aboutMe = [
+    {
+        text: "I've transitioned into specialising in Data Engineering after an extensive career as a CTO, lead developer, and full-stack developer across multiple startups. This experience has equipped me with a diverse set of both technical and non-technical skills."
+    },
+    {    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
+    },
+    {   text: "Passionate about working with Generative AI, I have played with various GPT models using the Transformers Library (Hugging Face) to complete tasks such as text generation and image generation. Additionally, I have played with the OpenAI API, Prompt Engineering, RAG, Vercel NextJS AI SDK, and LLM developer tools, including text generation web UI and stable diffusion web UI."},
+    { text: "I'm excited about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other."}
+//     {
+//     text: "I've transitioned into specialising in Data Engineering after nearly five years working as a CTO, lead developer, and full-stack developer across multiple startups. This experience has equipped me with a diverse set of both technical and non-technical skills.",
+// },
+// {    text: "I am highly motivated to rejoin the tech scene after a career break. During my career break, I enrolled in a data science and AI bootcamp where I trained different Machine Learning models using scikit-learn and TensorFlow, fine-tuning models, and integrating them with full-stack development.",
+// },
+// {   text: "Passionate about working with Generative AI, I have played with various GPT models using the Transformers Library (Hugging Face) to complete tasks such as text generation and image generation. Additionally, I have played with the OpenAI API, Prompt Engineering, RAG, Vercel NextJS AI SDK, and LLM developer tools, including text generation web UI and stable diffusion web UI."},
+// { text: "I'm excited about making a positive impact at work, helping customers solve problems, collaborating with a new team, and learning from each other."}
+
 ]
 
 export const standOutFacts = [{
