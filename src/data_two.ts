@@ -11,10 +11,10 @@ export const projects = [
     },
     {
         name:"Business Intelligence System",
-        skills: ['Agile Management', 'Full Stack Development', 'Project Management', 'Users Management'],
+        skills: ['Agile Management', 'Full Stack Development', 'ETL', 'Project Management', 'Users Management'],
         link: 'https://limetrack.earth/',
         image: "/personal-website/images/portfolio_two.png",
-        description: 'Headed an Innovate UK project, where I created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I developed the frontend, backend, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.'
+        description: 'Headed an Innovate UK project, where I created an interactive map showcasing the density of hospitality businesses across the UK. This initiative empowered our sales team to strategically choose new network locations. I sourced the data using ETL and developed the front end, back end, and database. Additionally, I created an interactive dashboard for the mobile app designed for B2B clients.'
     },
     {
         name:"CRM System",
