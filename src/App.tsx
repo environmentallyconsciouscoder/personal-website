@@ -220,84 +220,7 @@ function App() {
       </Section>
 
       <Section
-          ref={secondDivRef}
-        >
-          <Header title="Click to read about my skill:" type="header" />
-          <Chart setSkillIndex={onHandleSkillsIndex} />
-          <TextBox flexDirection="row">
-            <div style={{ width: '50%', margin: '1rem'}}>
-              <Box>
-                <Header title={selectedSkillLabel} type="subheader" />
-              </Box>
-            <div style={{ margin: '1rem'}}>
-              {selectedExperience}
-            </div>
-            </div>
-          </TextBox>
-      </Section>
-
-      <Section
-          ref={thirdDivRef}
-        >
-          <Header title="About Me" type="header" />
-          <Header title="My story so far..." type="subheader" />
-          <List text={aboutMe} />
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem', marginBottom: '2rem'}}>
-            <Header title="My life outside of tech" type="subheader" />
-            <CardWrapper>
-              {interests.map((data, index) => (
-                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
-              ))}
-            </CardWrapper>
-          </div>
-          <Header title="What makes me stand out?" type="subheader" />
-          <List text={standOutFacts} />
-          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem'}}>
-            <Header title="I especially value..." type="subheader" />
-            <CardWrapper>
-              {values.map((data, index) => (
-                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
-              ))}
-            </CardWrapper>
-          </div>
-        </Section>
-
-        <Section
-          ref={fourthDivRef}
-        >
-          <Header title="This is my Career Journey so far:" type="header" />
-          <div>
-            <div style={{ display: "flex", justifyContent: "center"}}>
-            </div>
-            <div style={{display: "flex", height: "100%", flexWrap: "wrap", justifyContent: "center"}}>
-              {careerJourneys.map((data) => (
-              <CardWrapperTwo>
-                <Header title={data.heading} type="subheader" />
-                <TextBox backgroundColor="rgb(244 114 182)" flexDirection="row">
-                    {data.information.map((data, index) => (
-                      <div style={{display:"flex", width: "50%", justifyContent: "center", margin: "1rem"}}>
-                        <TextBox backgroundColor="rgb(233 213 255)" flexDirection="column">
-                          <Card title={data.title} description={data.description} icon={""} image={""} index={index} />
-                          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: "3rem", flexDirection: "column"}}>
-                            <FaArrowDown />
-                          </div>
-                        </TextBox>
-                      </div>
-                    ))}
-                </TextBox>
-              </CardWrapperTwo>
-              ))}
-            </div>
-          </div>
-        </Section>
-
-      </div>
-
-
-
-
-      <Section
-        ref={fifthDivRef}
+        ref={secondDivRef}
       >
         <Header title="Work Experiences" type="header" />
               {projects.map((data) => (
@@ -328,7 +251,7 @@ function App() {
       </Section>
 
       <Section
-        ref={sixthDivRef}
+        ref={thirdDivRef}
       >
         <Header title="Data Science & ML Projects" type="header" />
         {projectsTwo.map((data) => (
@@ -357,6 +280,81 @@ function App() {
                 </div>
               ))}
       </Section>
+
+      <Section
+          ref={fourthDivRef}
+        >
+          <Header title="Click to read about my skill:" type="header" />
+          <Chart setSkillIndex={onHandleSkillsIndex} />
+          <TextBox flexDirection="row">
+            <div style={{ width: '50%', margin: '1rem'}}>
+              <Box>
+                <Header title={selectedSkillLabel} type="subheader" />
+              </Box>
+            <div style={{ margin: '1rem'}}>
+              {selectedExperience}
+            </div>
+            </div>
+          </TextBox>
+      </Section>
+
+      <Section
+          ref={fifthDivRef}
+        >
+          <Header title="About Me" type="header" />
+          <Header title="My story so far..." type="subheader" />
+          <List text={aboutMe} />
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem', marginBottom: '2rem'}}>
+            <Header title="My life outside of tech" type="subheader" />
+            <CardWrapper>
+              {interests.map((data, index) => (
+                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
+              ))}
+            </CardWrapper>
+          </div>
+          <Header title="What makes me stand out?" type="subheader" />
+          <List text={standOutFacts} />
+          <div style={{display: "flex", flexDirection: "column", alignItems: "center", margin: '0 10rem'}}>
+            <Header title="I especially value..." type="subheader" />
+            <CardWrapper>
+              {values.map((data, index) => (
+                <Card title={data.title} description={data.discription} icon={data.icon} image={data.image} index={index} />
+              ))}
+            </CardWrapper>
+          </div>
+        </Section>
+
+        <Section
+          ref={sixthDivRef}
+        >
+          <Header title="This is my Career Journey so far:" type="header" />
+          <div>
+            <div style={{ display: "flex", justifyContent: "center"}}>
+            </div>
+            <div style={{display: "flex", height: "100%", flexWrap: "wrap", justifyContent: "center"}}>
+              {careerJourneys.map((data) => (
+              <CardWrapperTwo>
+                <Header title={data.heading} type="subheader" />
+                <TextBox backgroundColor="rgb(244 114 182)" flexDirection="row">
+                    {data.information.map((data, index) => (
+                      <div style={{display:"flex", width: "50%", justifyContent: "center", margin: "1rem"}}>
+                        <TextBox backgroundColor="rgb(233 213 255)" flexDirection="column">
+                          <Card title={data.title} description={data.description} icon={""} image={""} index={index} />
+                          <div style={{ display: "flex", justifyContent: "center", alignItems: "center", fontSize: "3rem", flexDirection: "column"}}>
+                            <FaArrowDown />
+                          </div>
+                        </TextBox>
+                      </div>
+                    ))}
+                </TextBox>
+              </CardWrapperTwo>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+      </div>
+
 
       <Section
         ref={sevethDivRef}

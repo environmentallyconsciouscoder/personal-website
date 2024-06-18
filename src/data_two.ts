@@ -199,32 +199,32 @@ export const menuItems = [
     },
     {
         icon: "",
-        title: "Skills",
-        description: "see how i can add value to your organisation",
-        divRef: "secondDivRef"
-    },
-    {
-        icon: "",
-        title: "About Me",
-        description: "learn more about who i am outside of work",
-        divRef: "thirdDivRef"
-    },
-    {
-        icon: "",
-        title: "Career Journey",
-        description: "explore my career path to date",
-        divRef: "fourthDivRef"
-    },
-    {
-        icon: "",
         title: "Work Experiences",
         description: "look at a portfolio of my technical projects",
-        divRef: "fifthDivRef"
+        divRef: "secondDivRef"
     },
     {
         icon: "",
         title: "Data Science Projects",
         description: "look at a portfolio of my data science projects",
+        divRef: "thirdDivRef"
+    },
+    {
+        icon: "",
+        title: "Skills",
+        description: "see how i can add value to your organisation",
+        divRef: "fourthDivRef"
+    },
+    {
+        icon: "",
+        title: "About Me",
+        description: "learn more about who i am outside of work",
+        divRef: "fifthDivRef"
+    },
+    {
+        icon: "",
+        title: "Career Journey",
+        description: "explore my career path to date",
         divRef: "sixthDivRef"
     },
     {
