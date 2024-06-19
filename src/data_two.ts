@@ -27,6 +27,13 @@ export const projects = [
 
 export const projectsTwo = [
     {
+        name:"Formula 1",
+        skills: ['Azure Databricks', 'Azure Data Factory', 'Delta Lake', 'Apache Spark', 'Python', 'SQL'],
+        link: '',
+        image: "/personal-website/images/formula1_db_schema.png",
+        description: 'Configured and managed a Databricks workspace, including cluster setup, storage, and secure access using service principals. Created notebooks for ETL processes in the ingestion and processing layers, displaying results in reports and tables. Utilized various data patterns, such as full load and incremental load, to meet pipeline requirements. Employed Azure Data Factory to schedule and run notebooks for ingestion and transformations.'
+    },
+    {
         name:"Auto ML Platform",
         skills: ['mySQL', 'Fast API', 'Vite', 'Open AI', 'scikit-learn', 'TensorFlow', 'matplotlib', 'pandas'],
         link: '',
