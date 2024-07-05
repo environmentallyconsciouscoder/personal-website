@@ -173,7 +173,7 @@ function App() {
     <>
       <MenuWrapper>
         <Header title="James T" type="header" />
-        <Header title="Full Stack Development Meets Data Science & AI" type="subheader" />
+        <Header title="Full Stack Development Meets Data Science & AI :)" type="subheader" />
         {/* <strong>Looking for a React and Python Developer job</strong> */}
         <strong>Clearance Status: Security Clearance</strong>
         <strong>British Citizen</strong>
